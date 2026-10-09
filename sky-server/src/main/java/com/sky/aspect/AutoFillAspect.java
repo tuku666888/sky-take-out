@@ -38,7 +38,7 @@ public class AutoFillAspect {
         log.info("开始进行自动填充字段");
 
         //获取到当前被拦截的方法上的数据库操作类型
-        MethodSignature signature = (MethodSignature) joinPoint.getSignature();//方法签名对象
+        MethodSignature signature = (MethodSignature) joinPoint.getSignature();//获取本次被调用的方法信息。joinPoint 代表当前这次方法调用。
         AutoFill autoFill = signature.getMethod().getAnnotation(AutoFill.class);//获取方法上的注解对象
         OperationType operationType = autoFill.value();//获取注解上的数据库类型
 
