@@ -11,3 +11,8 @@ sky:
     endpoint:
     bucket-name:
     access-key-secret:
+  redis:
+    host:
+    port:
+    database:
+    password:
