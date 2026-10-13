@@ -67,7 +67,7 @@
         </where>
         order by d.update_time desc
     </select>
-    <select id="selectList" resultType="com.sky.entity.Dish" parameterType="Dish" >
+    <select id="list" resultType="com.sky.entity.Dish" parameterType="Dish" >
         select * from dish
         <where>
             <if test="name != null">
@@ -82,4 +82,5 @@
         </where>
         order by create_time desc
     </select>
+
 </mapper>

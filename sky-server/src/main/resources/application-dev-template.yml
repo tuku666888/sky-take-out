@@ -16,3 +16,7 @@ sky:
     port:
     database:
     password:
+
+  wechat:
+    appid:
+    secret:
